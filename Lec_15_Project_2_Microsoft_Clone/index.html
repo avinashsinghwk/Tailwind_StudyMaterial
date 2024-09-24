@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Clone</title>
+    <link rel="stylesheet" href="./dist/assets/index-CBDEk6El.css">
+</head>
+
+<body>
+    <nav class="flex justify-between px-5 items-center h-14 bg-white">
+        <div class="left flex space-x-3 md:hidden">
+            <img onclick="hamburgerClick()" class="w-7" src="./assets/menu.svg" alt="">
+            <img class="w-5" src="./assets/search.svg" alt="">
+        </div>
+        <div class="center">
+            <a href="/"><img class="w-36" src="./assets/logo.png" alt=""></a>
+        </div>
+        <div id="nav-links"
+            class="links flex flex-col w-full h-[calc(100vh-3.5rem)] bg-gray-200 gap-3 p-10 absolute inset-0 top-14 -left-full md:flex-row md:w-fit md:h-fit md:p-0 md:bg-white md:static">
+            <a class="text-sm font-lignt hover:border-b-2 hover:border-black" href="#">Microsoft 365</a>
+            <a class="text-sm font-lignt hover:border-b-2 hover:border-black" href="#">Teams</a>
+            <a class="text-sm font-lignt hover:border-b-2 hover:border-black" href="#">Copilot</a>
+            <a class="text-sm font-lignt hover:border-b-2 hover:border-black" href="#">Windows</a>
+            <a class="text-sm font-lignt hover:border-b-2 hover:border-black" href="#">Surface</a>
+            <a class="text-sm font-lignt hover:border-b-2 hover:border-black md:hidden lg:block" href="#">Xbox</a>
+            <a class="text-sm font-lignt hover:border-b-2 hover:border-black md:hidden xl:block" href="#">Support</a>
+            <select class="text-sm font-lignt hidden md:block xl:hidden" id="">
+                <option value="">More</option>
+                <option value="">Xbox</option>
+                <option value="">Support</option>
+            </select>
+        </div>
+        <div class="right flex space-x-4">
+            <img class="w-5 hidden md:block" src="./assets/search.svg" alt="">
+            <img class="w-5" src="./assets/cart.svg" alt="">
+            <img class="w-11" src="./assets/profile.svg" alt="">
+        </div>
+    </nav>
+
+    <div class="slicer flex flex-col-reverse lg:relative">
+        <div
+            class="slider-left bg-white w-full p-5 space-y-3 shadow-md lg:w-[33vw] lg:absolute lg:top-16 lg:left-16 lg:p-8">
+            <button class="bg-yellow-500 text-black font-semibold px-3 py-1">New</button>
+            <h2 class="font-semibold text-2xl lg:text-3xl ">Meet Surface Pro</h2>
+            <p>This laptop's unrivalled flexibility and AI features like Live Captions and Cocreator, enable you to do
+                more than you ever imagined.</p>
+            <button class="text-white bg-blue-800 py-2 px-3 font-semibold">Learn More</button>
+        </div>
+        <div class="slider-right">
+            <img class="w-full h-72 lg:h-[28rem]" src="./assets/slider_img1.avif">
+        </div>
+    </div>
+
+    <div class="info flex flex-wrap gap-12 justify-center px-11 py-8 md:py-20">
+        <div class="box1 flex items-center flex-col space-y-2">
+            <img class="w-10" src="./assets/microsoft_logo.svg" alt="">
+            <a class="underline text-blue-900" href="#">Choose Your Microsoft 365</a>
+        </div>
+        <div class="box2 flex items-center flex-col space-y-2">
+            <img class="w-10" src="./assets/football.svg" alt="">
+            <a class="underline text-blue-900" href="#">Xbox</a>
+        </div>
+        <div class="box3 flex items-center flex-col space-y-2">
+            <img class="w-10" src="./assets/microsoft_logo.svg" alt="">
+            <a class="underline text-blue-900" href="#">Get Windows 11</a>
+        </div>
+        <div class="box4 flex items-center flex-col space-y-2">
+            <img class="w-10" src="./assets/message.svg" alt="">
+            <a class="underline text-blue-900" href="#">Explore Surface Devices</a>
+        </div>
+    </div>
+
+    <div class="cards p-6 flex flex-col flex-wrap gap-8 bg-gray-200 md:flex-row md:justify-between">
+
+        <div class="card1 flex flex-col bg-white shadow-lg w-full md:w-[21rem] md:h-[30rem]">
+            <div>
+                <img class="w-full h-60 md:h-48" src="./assets/card1.avif" alt="">
+            </div>
+            <div class="flex flex-col gap-4 p-7 ">
+                <h2 class="text-xl font-semibold">Maximise the everyday with Microsoft 365</h2>
+                <p>Get online protection, secure cloud storage and innovative apps designed to fit your needs – all in
+                    one
+                    plan.</p>
+                <div class="flex gap-5 items-center flex-wrap">
+                    <button class="px-4 py-2 bg-blue-800 text-white w-fit font-semibold">For one person</button>
+                <a class="text-blue-700 font-semibold" href="#">For up to six people ></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card2 flex flex-col bg-white shadow-lg w-full md:w-[21rem] md:h-[30rem]">
+            <div>
+                <img class="w-full h-60 md:h-48" src="./assets/card2.avif" alt="">
+            </div>
+            <div class="flex flex-col justify-between gap-4 p-7 ">
+                <h2 class="text-xl font-semibold">Xbox Series X</h2>
+                <p class="md:h-28">The fastest, most powerful Xbox ever.</p>
+                <button class="px-4 py-2 bg-blue-800 text-white w-fit font-semibold">Shop Xbox Series X</button>
+            </div>
+        </div>
+
+        <div class="card3 flex flex-col bg-white shadow-lg w-full md:w-[21rem] md:h-[30rem]">
+            <div>
+                <img class="w-full h-60 md:h-48" src="./assets/card3.webp" alt="">
+            </div>
+            <div class="flex flex-col gap-4 p-7 ">
+                <h2 class="text-xl font-semibold">Xbox Series 5</h2>
+                <p class="md:h-28">Next-gen performance is the smallest Xbox ever.</p>
+                <button class="px-4 py-2 bg-blue-800 text-white w-fit font-semibold">Shop Xbox Series 5</button>
+            </div>
+        </div>
+
+        <div class="card4 flex flex-col bg-white shadow-lg w-full md:w-[21rem] md:h-[30rem]">
+            <div>
+                <img class="w-full h-60 md:h-48" src="./assets/slider_img2.avif" alt="">
+            </div>
+            <div class="flex flex-col gap-4 p-7 ">
+                <h2 class="text-xl font-semibold">Designed for life today - and tomorrow</h2>
+                <p class="md:h-28">The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to everything you love.</p>
+                <button class="px-4 py-2 bg-blue-800 text-white w-fit font-semibold">See if your PC is ready</button>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+<script>
+    function hamburgerClick() {
+        document.getElementById('nav-links').classList.toggle('-left-full')
+    }
+</script>
+
+</html>

@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.btn{
+    @apply px-4 py-2 w-28 rounded-lg border-black border-2 font-bold text-white bg-red-900;
+}
+.btn2{
+    @apply px-4 py-2 w-28 rounded-lg border-black border-2 font-bold text-white bg-green-900;
+}

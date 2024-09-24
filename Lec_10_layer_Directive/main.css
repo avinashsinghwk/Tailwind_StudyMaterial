@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .para {
+        @apply bg-black font-bold text-white p-12
+    }
+}

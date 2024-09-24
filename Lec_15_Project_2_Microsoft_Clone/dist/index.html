@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Clone</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-CBDEk6El.css">
+</head>
+
+<body>
+    <nav class="flex justify-between px-5 items-center h-14 bg-white">
+        <div class="left flex space-x-3 md:hidden">
+            <img onclick="hamburgerClick()" class="w-7" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2024%2024'%20stroke-width='1.5'%20stroke='currentColor'%20class='size-6'%3e%3cpath%20stroke-linecap='round'%20stroke-linejoin='round'%20d='M3.75%206.75h16.5M3.75%2012h16.5m-16.5%205.25h16.5'%20/%3e%3c/svg%3e" alt="">
+            <img class="w-5" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2024%2024'%20stroke-width='1.5'%20stroke='currentColor'%20class='size-6'%3e%3cpath%20stroke-linecap='round'%20stroke-linejoin='round'%20d='m21%2021-5.197-5.197m0%200A7.5%207.5%200%201%200%205.196%205.196a7.5%207.5%200%200%200%2010.607%2010.607Z'%20/%3e%3c/svg%3e" alt="">
+        </div>
+        <div class="center">
+            <a href="/"><img class="w-36" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXMAAACICAMAAAAiRvvOAAAAnFBMVEX///9zc3N/ugD/uQHyUCIBpO9qampvb29paWltbW18fHwAou/t7e309PT8/PzAwMCtra3/tACNwSnx9+l1tQDc68KLi4vk5OTD3aD/4qv/vADzZD71fmHySxn1eFzyRgn4sqar2fhSuvP/9+n/68MAqPC2traZmZmkpKTJycnS0tKBgYGMjIzZ2dnm5ubExMT2i3H6w7i74vpUvfMEYak7AAAH+0lEQVR4nO2b6ZacNhBGwY61EKBJ7EAWO4udsNM4yfu/W5BKK5vHccO4+9Q982PQAuKTVFWS6CBAEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBnp2Pv+zwMQhev/h+mxc/PHfz75K373b4ddL8zYtt3qDm/4e3777ZBDU/BtT8fFDz80HNzwc1Px/U/HxQ8/NBzV3SOI6PfwpqboizkAmqox/07JpfhxNG1lPIGA8l3dFPurXm6UWTrD6v8bOT7oyB9RR6Eiryox91a80TxgFWrj3OZsPojuj0kuQrEL3i4f1qTnXTo7XHXfSrEan5wOQFW58TJ6IaQlnI2d3ZFqs5G1YeF4We5i1MaHY9+jU/RS+bTeqp8+MLJBXZ6ky9AcdpTlcshhpORvOrGucHvdyTSWQ7aK2v07aeYpjsoKcdp3nIlxajor7mQc3oNKHHg17uycBYICaCqqZmhfweNb/MM2MTG5j3G/OoXzNC59JAw8y1HBv3qPnSi5Z8ofnXwcj99t6l5nTVi9os1Pzmmney0XMvKqMUnlHU/BDNwSnNvGgu8qKCOJqnEv8WaTGWWV2Og6qd2kLXZmxip2AzFcwu7Ur/Tfeos7K5zu6dDCNUsS0Tt74ozfWjYMhkwUrrbsAxmkdBt/SiMjDkZezGCL20Nm6xoQoZ4ZROS1XaFyIFJsYUxxX5lMO0pytUQcoJiS6eMkkWTutdkcPC2klvKwrpnPC8UYlduM/q2u6LOErzkSzaK7Vj8dXVXA59YjWPe+Y4YSIFy8Qg5HXQMmrvmVRuwZCEjX1QS7mTZZKvuVeFReBuOjfxrjVPFl40lfO1D4qF5nY6NMQTABYpsq9orQNNqcFA50rZFUzD3HQj2cgWVeS64HHGeVDPvaiMgVm7p/lFq0WFBfA1z/R6SmgwuAVnoqu1LSWEiDwt2bhWpXkszYu5F4V3S3c010qSsMrKrKeEW81DUZ2zyYJHdhHAoros605Vm/pTAH1D+mZoL5PJD/17s05UidScERs9ESN6dhFNaLqNsDC4Nb/+toPUfI8dzedeVEotwq9NzVP1puEIDjG5OONcZpRFPGSd3UJolZ6Ruhb1UuhrNejTMYKbweYa7QpIb9Qyop8ekySpilvSBEhV3ALXN9f87993+Htq9I97vN7RfOZFa/CgO5pLXxnSyL5kIh2j0px2kJGaMWsKpuAHibDPkMlMHAP/QGOo3RqP4abK4Zwbn98aq3nqedGUqGG1qXlKZ0pqtOZ2BwruXNgiMQQqYucbtofnO5Xd4t5QTm0lPormyouq+Fi+FRHGYEtz2GcizeKWoDk3u9kpzAdvkVubxa3aIvRvA36VexvinbVHJ2v+zx87/DO94E97fFjcz9H86nrRyLzgluYV9d/bAJrbsySlqreZo9JavRUecm9/GOw199aroDOcEZ6r+ftvd3gfBB++2+PPxf0czdWCR778wMxLbGkeOXPdQ8Ut5hoEJP7K084FNX5JNNoS9Up/XonupvM1f7UJaP5ym09o3lgvWmkPuqk5VFwxLSo+r/zrcBbCQY8JlVodiJNpHaVy85Utt4TbBz6O5hD8CV8nJ7z0oJuawzKTrJxfZK5fCLQRmp3Od3aWZGYdykm2yDWAz4Y59jiaW7XkYYUawxuaw1RfO7j+XM2D0q7yCQSYnZkFlgfVXG1npeqwAhJ3NX/6OJ99EeGpGtsNMCrXRNvj/NFsi/qEgTTSg2pBtmwLhBYrx9FzzcEhUq9MGtlBK4gzvbcolcuptW2mCNjzB/Oh2ovmjgfd1ByM/2bc4mRA3OJ/hxQ7QQiQlmrrkaa6m3y3O4Axe5ZY8UjNzRaKs+7eihVzKLs8lplrvrbqadzDJ92U3KxXVXhZuNkQ/kTPsCY6VnO1h+JptKU5fBTAlx9PzTVXmwRetJ2v2fjEWA9wLH6w6M6rVc3pnWoe27hNJ21prs4kvMEo7cdcc73Qd3pHDfNRV1FQY3BgoeTaHhgNe3tcax+i3YSDNVcfArqDZnNfUe3QciNMmrnnRPYZ+os74zHVZ4/SLrWd6TQY5/JjSHV2ZEWH4xHtVueag92hB326erTmelVoPwPd1FxtDoasF6fy6VBztq55UENJkkPBSvVBCw9kfSPFivP5PsRUphqmjkna3v84da652voV3VfUNz/4P1rzQJkWu4TZPifSB5mUMEKnP/881HlIqg4pREHO1CkPHFiLMT8lR30fMdcE6Q6d8ripYmbKXHNtEtkh50SHa1462xqSnfPQ0js9Djc1D5KQhjP0DweUndFn1FT71YHMa4T2ZwlzzfW0mKXeiMM1V5+z2ITPOPfnW5pPcaDfPdQc+7deBumMZbhGZFbFjoOF5tb334Pm4scrxJ2PPeHKMAMFc37bkhPxv/N9S8XMqTxlVFroTFRg88XSGNr1PWe5cZwDM/022REv3Cs5capUjoe8LFo9cG2Mvn7bkpYC98OsQiQ4i5VYlijhjS/yf3eTJS5zOHuPahVktLKME+Yp2loc2U/kpfs7jbTNOpnM+/nvyNJGfPu1kjVAm/wXkXen1cru8hdya81vQhLHTwvTxG9oV0tu32GzymrRQ6LFr1LzBwc1Px/U/HxQ8/NBzc8HNT8f1Px8UPPzQc3PBzU/n39f/bXJK6H5y5+3eYmaIwiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIKfwH2CoBUaVw1nRAAAAAElFTkSuQmCC" alt=""></a>
+        </div>
+        <div id="nav-links"
+            class="links flex flex-col w-full h-[calc(100vh-3.5rem)] bg-gray-200 gap-3 p-10 absolute inset-0 top-14 -left-full md:flex-row md:w-fit md:h-fit md:p-0 md:bg-white md:static">
+            <a class="text-sm font-lignt hover:border-b-2 hover:border-black" href="#">Microsoft 365</a>
+            <a class="text-sm font-lignt hover:border-b-2 hover:border-black" href="#">Teams</a>
+            <a class="text-sm font-lignt hover:border-b-2 hover:border-black" href="#">Copilot</a>
+            <a class="text-sm font-lignt hover:border-b-2 hover:border-black" href="#">Windows</a>
+            <a class="text-sm font-lignt hover:border-b-2 hover:border-black" href="#">Surface</a>
+            <a class="text-sm font-lignt hover:border-b-2 hover:border-black md:hidden lg:block" href="#">Xbox</a>
+            <a class="text-sm font-lignt hover:border-b-2 hover:border-black md:hidden xl:block" href="#">Support</a>
+            <select class="text-sm font-lignt hidden md:block xl:hidden" id="">
+                <option value="">More</option>
+                <option value="">Xbox</option>
+                <option value="">Support</option>
+            </select>
+        </div>
+        <div class="right flex space-x-4">
+            <img class="w-5 hidden md:block" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2024%2024'%20stroke-width='1.5'%20stroke='currentColor'%20class='size-6'%3e%3cpath%20stroke-linecap='round'%20stroke-linejoin='round'%20d='m21%2021-5.197-5.197m0%200A7.5%207.5%200%201%200%205.196%205.196a7.5%207.5%200%200%200%2010.607%2010.607Z'%20/%3e%3c/svg%3e" alt="">
+            <img class="w-5" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2024%2024'%20stroke-width='1.5'%20stroke='currentColor'%20class='size-6'%3e%3cpath%20stroke-linecap='round'%20stroke-linejoin='round'%20d='M2.25%203h1.386c.51%200%20.955.343%201.087.835l.383%201.437M7.5%2014.25a3%203%200%200%200-3%203h15.75m-12.75-3h11.218c1.121-2.3%202.1-4.684%202.924-7.138a60.114%2060.114%200%200%200-16.536-1.84M7.5%2014.25%205.106%205.272M6%2020.25a.75.75%200%201%201-1.5%200%20.75.75%200%200%201%201.5%200Zm12.75%200a.75.75%200%201%201-1.5%200%20.75.75%200%200%201%201.5%200Z'%20/%3e%3c/svg%3e" alt="">
+            <img class="w-11" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2024%2024'%20stroke-width='1.5'%20stroke='%23696d74'%20class='size-6'%3e%3cpath%20stroke-linecap='round'%20stroke-linejoin='round'%20d='M17.982%2018.725A7.488%207.488%200%200%200%2012%2015.75a7.488%207.488%200%200%200-5.982%202.975m11.963%200a9%209%200%201%200-11.963%200m11.963%200A8.966%208.966%200%200%201%2012%2021a8.966%208.966%200%200%201-5.982-2.275M15%209.75a3%203%200%201%201-6%200%203%203%200%200%201%206%200Z'%20/%3e%3c/svg%3e" alt="">
+        </div>
+    </nav>
+
+    <div class="slicer flex flex-col-reverse lg:relative">
+        <div
+            class="slider-left bg-white w-full p-5 space-y-3 shadow-md lg:w-[33vw] lg:absolute lg:top-16 lg:left-16 lg:p-8">
+            <button class="bg-yellow-500 text-black font-semibold px-3 py-1">New</button>
+            <h2 class="font-semibold text-2xl lg:text-3xl ">Meet Surface Pro</h2>
+            <p>This laptop's unrivalled flexibility and AI features like Live Captions and Cocreator, enable you to do
+                more than you ever imagined.</p>
+            <button class="text-white bg-blue-800 py-2 px-3 font-semibold">Learn More</button>
+        </div>
+        <div class="slider-right">
+            <img class="w-full h-72 lg:h-[28rem]" src="/assets/slider_img1-CcY5mI67.avif">
+        </div>
+    </div>
+
+    <div class="info flex flex-wrap gap-12 justify-center px-11 py-8 md:py-20">
+        <div class="box1 flex items-center flex-col space-y-2">
+            <img class="w-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Layer_2'%20data-name='Layer%202'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20120'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%231a1a1a;%20}%20.cls-1,%20.cls-2%20{%20stroke-width:%200px;%20}%20.cls-2%20{%20fill:%20%23fff;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='MSCOM_Icons'%20data-name='MSCOM%20Icons'%3e%3cg%20id='Link-List-Icons-Microsoft-365'%3e%3cg%20id='Bounding_Box'%20data-name='Bounding%20Box'%3e%3crect%20class='cls-2'%20width='120'%20height='120'/%3e%3c/g%3e%3cpath%20class='cls-1'%20d='M57.23,15v42.23H15V15h42.23ZM57.23,62.77v42.23H15v-42.23h42.23ZM105,15v42.23h-42.23V15h42.23ZM105,62.77v42.23h-42.23v-42.23h42.23Z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="">
+            <a class="underline text-blue-900" href="#">Choose Your Microsoft 365</a>
+        </div>
+        <div class="box2 flex items-center flex-col space-y-2">
+            <img class="w-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Layer_2'%20data-name='Layer%202'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20120'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%231a1a1a;%20}%20.cls-1,%20.cls-2%20{%20stroke-width:%200px;%20}%20.cls-2%20{%20fill:%20%23fff;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='MSCOM_Icons'%20data-name='MSCOM%20Icons'%3e%3cg%20id='Link-List-Icons-Xbox-Games-Consoles'%3e%3cg%20id='Bounding_Box'%20data-name='Bounding%20Box'%3e%3crect%20class='cls-2'%20width='120'%20height='120'/%3e%3c/g%3e%3cg%20id='Xbox_Orb'%20data-name='Xbox%20Orb'%3e%3cpath%20class='cls-1'%20d='M47.65,40.01c-1.32,1.55-2.81,3.43-4.48,5.65-1.67,2.21-3.37,4.61-5.12,7.21-1.74,2.59-3.45,5.29-5.12,8.09s-3.16,5.57-4.48,8.31c-1.32,2.74-2.38,5.38-3.19,7.91-.81,2.53-1.21,4.81-1.21,6.84,0,1.11.15,2.15.44,3.12l-.04.22c-.12,0-.21-.03-.27-.09-1.49-1.88-2.81-3.9-3.96-6.09-1.14-2.18-2.1-4.44-2.88-6.77-.78-2.33-1.36-4.71-1.76-7.14-.4-2.43-.59-4.85-.59-7.25,0-2.93.29-5.87.88-8.81.58-2.94,1.45-5.8,2.59-8.57,1.14-2.77,2.55-5.4,4.22-7.89,1.67-2.49,3.57-4.75,5.71-6.77.12-.12.34-.2.68-.24.34-.04.55-.07.64-.07.91,0,1.89.22,2.97.66,1.07.44,2.17,1.01,3.32,1.71,1.14.7,2.29,1.49,3.43,2.37,1.14.88,2.23,1.76,3.25,2.66,1.03.9,1.96,1.75,2.81,2.57s1.57,1.51,2.16,2.07l.04.18-.04.13h0ZM60.13,51.17c1.08.82,2.35,1.85,3.8,3.1,1.45,1.25,3,2.65,4.63,4.2,1.64,1.55,3.33,3.22,5.08,5.01,1.74,1.79,3.44,3.63,5.1,5.54,1.66,1.9,3.22,3.82,4.7,5.76,1.48,1.93,2.78,3.82,3.89,5.65,1.11,1.83,1.99,3.59,2.64,5.27.64,1.68.97,3.23.97,4.63,0,.67-.1,1.31-.31,1.91-.21.6-.54,1.15-1.01,1.65-.62.62-1.32,1.21-2.11,1.8-.79.58-1.55,1.13-2.29,1.62-3.75,2.52-7.76,4.43-12.04,5.73-4.28,1.3-8.67,1.96-13.18,1.96s-8.91-.65-13.18-1.96c-4.28-1.3-8.29-3.21-12.04-5.73-.73-.5-1.49-1.04-2.29-1.62-.79-.58-1.49-1.19-2.11-1.8-.47-.5-.81-1.05-1.01-1.65s-.31-1.24-.31-1.91c0-1.4.32-2.95.97-4.63s1.53-3.44,2.64-5.27c1.11-1.83,2.41-3.71,3.89-5.65,1.48-1.93,3.05-3.85,4.7-5.76,1.66-1.9,3.35-3.75,5.1-5.54,1.74-1.79,3.43-3.46,5.08-5.01,1.64-1.55,3.19-2.95,4.63-4.2s2.72-2.28,3.8-3.1l.13-.09.13.09h0ZM36.4,21.85l.09-.22c3.66-2.2,7.42-3.85,11.29-4.96,3.87-1.11,7.94-1.67,12.22-1.67s8.33.55,12.17,1.65c3.84,1.1,7.59,2.74,11.25,4.95l.09.22-.22.04c-.91-.2-1.9-.31-2.99-.31-1.64,0-3.35.2-5.12.59s-3.54.92-5.3,1.56c-1.76.64-3.47,1.37-5.14,2.17-1.67.81-3.22,1.6-4.66,2.39l-.09.04-.09-.04c-1.4-.79-2.94-1.58-4.61-2.37-1.67-.79-3.38-1.51-5.14-2.16-1.76-.64-3.52-1.17-5.3-1.58-1.77-.41-3.46-.62-5.08-.62-.53,0-1.05.02-1.58.07-.53.04-1.05.14-1.58.28l-.22-.04h0ZM90.23,27.65c.14,0,.37.02.68.07.31.04.54.13.68.24,2.14,2.02,4.04,4.28,5.71,6.77,1.67,2.49,3.08,5.12,4.22,7.89,1.14,2.77,2.01,5.62,2.59,8.57s.88,5.88.88,8.81c0,2.4-.2,4.82-.59,7.25-.4,2.43-.98,4.81-1.76,7.14-.78,2.33-1.74,4.59-2.88,6.77-1.14,2.18-2.46,4.21-3.96,6.09-.06.06-.15.09-.27.09l-.05-.22c.29-.97.44-2.01.44-3.12,0-2.02-.4-4.3-1.21-6.84-.81-2.53-1.86-5.17-3.16-7.91-1.3-2.74-2.8-5.52-4.48-8.33-1.68-2.81-3.4-5.52-5.14-8.11-1.74-2.59-3.46-4.99-5.14-7.21-1.69-2.21-3.17-4.09-4.46-5.65l-.05-.13s.05-.05.05-.07c0-.01.01-.04.04-.07.56-.56,1.27-1.25,2.13-2.07s1.81-1.68,2.83-2.57c1.03-.9,2.1-1.78,3.23-2.66,1.13-.88,2.25-1.67,3.38-2.37,1.13-.7,2.23-1.27,3.29-1.71,1.07-.44,2.06-.66,2.97-.66Z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="">
+            <a class="underline text-blue-900" href="#">Xbox</a>
+        </div>
+        <div class="box3 flex items-center flex-col space-y-2">
+            <img class="w-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Layer_2'%20data-name='Layer%202'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20120'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%231a1a1a;%20}%20.cls-1,%20.cls-2%20{%20stroke-width:%200px;%20}%20.cls-2%20{%20fill:%20%23fff;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='MSCOM_Icons'%20data-name='MSCOM%20Icons'%3e%3cg%20id='Link-List-Icons-Microsoft-365'%3e%3cg%20id='Bounding_Box'%20data-name='Bounding%20Box'%3e%3crect%20class='cls-2'%20width='120'%20height='120'/%3e%3c/g%3e%3cpath%20class='cls-1'%20d='M57.23,15v42.23H15V15h42.23ZM57.23,62.77v42.23H15v-42.23h42.23ZM105,15v42.23h-42.23V15h42.23ZM105,62.77v42.23h-42.23v-42.23h42.23Z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="">
+            <a class="underline text-blue-900" href="#">Get Windows 11</a>
+        </div>
+        <div class="box4 flex items-center flex-col space-y-2">
+            <img class="w-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Layer_2'%20data-name='Layer%202'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20120'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%231a1a1a;%20}%20.cls-1,%20.cls-2%20{%20stroke-width:%200px;%20}%20.cls-2%20{%20fill:%20%23fff;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='MSCOM_Icons'%20data-name='MSCOM%20Icons'%3e%3cg%20id='Link-List-Icons-Surface-Devices'%3e%3cg%20id='Bounding_Box'%20data-name='Bounding%20Box'%3e%3crect%20class='cls-2'%20width='120'%20height='120'/%3e%3c/g%3e%3cg%20id='Surface_Icon'%20data-name='Surface%20Icon'%3e%3cg%3e%3cpath%20class='cls-1'%20d='M105.01,84.51s-.07,0-.1,0l-12.15-.02c-1.1,0-2-.9-2-2,0-1.1.9-2,2-2h0l12.19.02c.61,0,.87-.39.95-.57.08-.18.23-.63-.15-1.07-.05-.06-.1-.12-.14-.18l-12.05-17.59c-.62-.91-.39-2.16.52-2.78.91-.62,2.16-.39,2.78.52l11.99,17.51c1.24,1.5,1.5,3.52.67,5.29-.83,1.78-2.55,2.87-4.51,2.87Z'/%3e%3cpath%20class='cls-1'%20d='M87.63,90.29H16.89c-1.95,0-3.81-.83-5.12-2.28-1.31-1.45-1.94-3.4-1.74-5.34l4.95-46.79c.37-3.52,3.32-6.17,6.86-6.17h70.68c1.95,0,3.82.83,5.12,2.28,1.31,1.45,1.94,3.39,1.74,5.33l-4.89,46.79c-.37,3.52-3.32,6.18-6.86,6.18ZM21.84,33.71c-1.49,0-2.73,1.11-2.88,2.59l-4.95,46.79c-.09.83.17,1.62.73,2.24.56.62,1.32.96,2.15.96h70.74c1.49,0,2.73-1.12,2.88-2.6l4.89-46.79c.09-.82-.17-1.62-.73-2.23-.56-.62-1.32-.96-2.15-.96H21.84Z'/%3e%3cpath%20class='cls-1'%20d='M56.79,42.05c-1.1,0-2-.9-2-2s.89-2,1.99-2h.01c1.1,0,2,.9,2,2s-.9,2-2,2Z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="">
+            <a class="underline text-blue-900" href="#">Explore Surface Devices</a>
+        </div>
+    </div>
+
+    <div class="cards p-6 flex flex-col flex-wrap gap-8 bg-gray-200 md:flex-row md:justify-between">
+
+        <div class="card1 flex flex-col bg-white shadow-lg w-full md:w-[21rem] md:h-[30rem]">
+            <div>
+                <img class="w-full h-60 md:h-48" src="/assets/card1-DELurDIK.avif" alt="">
+            </div>
+            <div class="flex flex-col gap-4 p-7 ">
+                <h2 class="text-xl font-semibold">Maximise the everyday with Microsoft 365</h2>
+                <p>Get online protection, secure cloud storage and innovative apps designed to fit your needs – all in
+                    one
+                    plan.</p>
+                <div class="flex gap-5 items-center flex-wrap">
+                    <button class="px-4 py-2 bg-blue-800 text-white w-fit font-semibold">For one person</button>
+                <a class="text-blue-700 font-semibold" href="#">For up to six people ></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card2 flex flex-col bg-white shadow-lg w-full md:w-[21rem] md:h-[30rem]">
+            <div>
+                <img class="w-full h-60 md:h-48" src="data:image/avif;base64,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" alt="">
+            </div>
+            <div class="flex flex-col justify-between gap-4 p-7 ">
+                <h2 class="text-xl font-semibold">Xbox Series X</h2>
+                <p class="md:h-28">The fastest, most powerful Xbox ever.</p>
+                <button class="px-4 py-2 bg-blue-800 text-white w-fit font-semibold">Shop Xbox Series X</button>
+            </div>
+        </div>
+
+        <div class="card3 flex flex-col bg-white shadow-lg w-full md:w-[21rem] md:h-[30rem]">
+            <div>
+                <img class="w-full h-60 md:h-48" src="/assets/card3-D2l7yZ-t.webp" alt="">
+            </div>
+            <div class="flex flex-col gap-4 p-7 ">
+                <h2 class="text-xl font-semibold">Xbox Series 5</h2>
+                <p class="md:h-28">Next-gen performance is the smallest Xbox ever.</p>
+                <button class="px-4 py-2 bg-blue-800 text-white w-fit font-semibold">Shop Xbox Series 5</button>
+            </div>
+        </div>
+
+        <div class="card4 flex flex-col bg-white shadow-lg w-full md:w-[21rem] md:h-[30rem]">
+            <div>
+                <img class="w-full h-60 md:h-48" src="/assets/slider_img2-CFOyKggw.avif" alt="">
+            </div>
+            <div class="flex flex-col gap-4 p-7 ">
+                <h2 class="text-xl font-semibold">Designed for life today - and tomorrow</h2>
+                <p class="md:h-28">The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to everything you love.</p>
+                <button class="px-4 py-2 bg-blue-800 text-white w-fit font-semibold">See if your PC is ready</button>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+<script>
+    function hamburgerClick() {
+        document.getElementById('nav-links').classList.toggle('-left-full')
+    }
+</script>
+
+</html>
